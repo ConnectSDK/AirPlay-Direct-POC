@@ -407,11 +407,16 @@ typedef enum {
             }
         }
         
+        NSString *airPlayUUID = [device serviceWithName:@"AirPlay"].serviceDescription.UUID;
+        
+        if (!airPlayUUID)
+            return;
+        
         __block BOOL foundDevice = NO;
         
         [routes enumerateObjectsUsingBlock:^(id obj, NSUInteger idx, BOOL *stop)
         {
-            if ([[obj objectForKey:@"RouteName"] isEqualToString:device.friendlyName])
+            if ([[obj objectForKey:@"RouteUID"] hasPrefix:airPlayUUID])
             {
                 if ([[obj objectForKey:@"RouteSupportsAirPlayAudio"] boolValue])
                 {
