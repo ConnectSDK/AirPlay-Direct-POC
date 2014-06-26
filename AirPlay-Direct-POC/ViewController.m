@@ -436,4 +436,63 @@ typedef enum {
     }];
 }
 
+- (void) setMirroredRouteForDevice:(ConnectableDevice *)device
+{
+    if (!self.audioDeviceController)
+    {
+        self.audioDeviceController = [[MPAudioDeviceController alloc] init];
+        self.audioDeviceController.routeDiscoveryEnabled = YES;
+    }
+    
+    // credit: Justin DeWind
+    // source: http://spin.atomicobject.com/2012/04/23/ios-mirroring-and-programmatic-airplay-selection/
+    [self.audioDeviceController determinePickableRoutesWithCompletionHandler:^(NSInteger value)
+     {
+         NSMutableArray *routes = [NSMutableArray array];
+         [self.audioDeviceController clearCachedRoutes];
+         
+         NSUInteger index = 0;
+         while (true)
+         {
+             NSDictionary *route = [self.audioDeviceController routeDescriptionAtIndex:index];
+             if (route)
+             {
+                 [routes addObject:route];
+                 index++;
+             } else
+             {
+                 NSLog(@"%@", routes);
+                 break;
+             }
+         }
+         
+         NSString *airPlayUUID = [device serviceWithName:@"AirPlay"].serviceDescription.UUID;
+         
+         if (!airPlayUUID)
+             return;
+         
+         __block BOOL foundDevice = NO;
+         
+         [routes enumerateObjectsUsingBlock:^(id obj, NSUInteger idx, BOOL *stop)
+          {
+              if ([[obj objectForKey:@"RouteUID"] hasPrefix:airPlayUUID])
+              {
+                  if ([[obj objectForKey:@"RouteSupportsAirPlayScreen"] boolValue])
+                  {
+                      NSDictionary *info = [obj objectForKey:@"AirPlayPortExtendedInfo"];
+                      if ([[info objectForKey:@"uid"] hasSuffix:@"-screen"])
+                      {
+                          [self.audioDeviceController pickRouteAtIndex:idx];
+                          foundDevice = YES;
+                          *stop = YES;
+                      }
+                  }
+              }
+          }];
+         
+         if (!foundDevice)
+             [self cleanUpIfNecessary];
+     }];
+}
+
 @end
