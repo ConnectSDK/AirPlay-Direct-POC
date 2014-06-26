@@ -1,0 +1,349 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		EA506527195B70F300C2A56F /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = EA506526195B70F300C2A56F /* libz.dylib */; };
+		EA506529195B70F700C2A56F /* libicucore.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = EA506528195B70F700C2A56F /* libicucore.dylib */; };
+		EA50652B195B762900C2A56F /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EA50652A195B762900C2A56F /* AVFoundation.framework */; };
+		EAB1D3DF195A3BED00F9D55A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EAB1D3DE195A3BED00F9D55A /* Foundation.framework */; };
+		EAB1D3E1195A3BED00F9D55A /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EAB1D3E0195A3BED00F9D55A /* CoreGraphics.framework */; };
+		EAB1D3E3195A3BED00F9D55A /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EAB1D3E2195A3BED00F9D55A /* UIKit.framework */; };
+		EAB1D3E9195A3BED00F9D55A /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = EAB1D3E7195A3BED00F9D55A /* InfoPlist.strings */; };
+		EAB1D3EB195A3BED00F9D55A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = EAB1D3EA195A3BED00F9D55A /* main.m */; };
+		EAB1D3EF195A3BED00F9D55A /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = EAB1D3EE195A3BED00F9D55A /* AppDelegate.m */; };
+		EAB1D3F2195A3BED00F9D55A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EAB1D3F0195A3BED00F9D55A /* Main.storyboard */; };
+		EAB1D3F5195A3BED00F9D55A /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EAB1D3F4195A3BED00F9D55A /* ViewController.m */; };
+		EAB1D3F7195A3BED00F9D55A /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EAB1D3F6195A3BED00F9D55A /* Images.xcassets */; };
+		EAB1D416195A3C0500F9D55A /* MediaPlayer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EAB1D415195A3C0500F9D55A /* MediaPlayer.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		EA506526195B70F300C2A56F /* libz.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.dylib; path = usr/lib/libz.dylib; sourceTree = SDKROOT; };
+		EA506528195B70F700C2A56F /* libicucore.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libicucore.dylib; path = usr/lib/libicucore.dylib; sourceTree = SDKROOT; };
+		EA50652A195B762900C2A56F /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		EAB1D3DB195A3BED00F9D55A /* AirPlay-Direct-POC.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "AirPlay-Direct-POC.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		EAB1D3DE195A3BED00F9D55A /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		EAB1D3E0195A3BED00F9D55A /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		EAB1D3E2195A3BED00F9D55A /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		EAB1D3E6195A3BED00F9D55A /* AirPlay-Direct-POC-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "AirPlay-Direct-POC-Info.plist"; sourceTree = "<group>"; };
+		EAB1D3E8195A3BED00F9D55A /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		EAB1D3EA195A3BED00F9D55A /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		EAB1D3EC195A3BED00F9D55A /* AirPlay-Direct-POC-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "AirPlay-Direct-POC-Prefix.pch"; sourceTree = "<group>"; };
+		EAB1D3ED195A3BED00F9D55A /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		EAB1D3EE195A3BED00F9D55A /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		EAB1D3F1195A3BED00F9D55A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		EAB1D3F3195A3BED00F9D55A /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		EAB1D3F4195A3BED00F9D55A /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		EAB1D3F6195A3BED00F9D55A /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		EAB1D3FD195A3BED00F9D55A /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		EAB1D415195A3C0500F9D55A /* MediaPlayer.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MediaPlayer.framework; path = System/Library/Frameworks/MediaPlayer.framework; sourceTree = SDKROOT; };
+		EAB1D417195A3DED00F9D55A /* MPAudioDeviceController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MPAudioDeviceController.h; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		EAB1D3D8195A3BED00F9D55A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EA50652B195B762900C2A56F /* AVFoundation.framework in Frameworks */,
+				EA506529195B70F700C2A56F /* libicucore.dylib in Frameworks */,
+				EA506527195B70F300C2A56F /* libz.dylib in Frameworks */,
+				EAB1D416195A3C0500F9D55A /* MediaPlayer.framework in Frameworks */,
+				EAB1D3E1195A3BED00F9D55A /* CoreGraphics.framework in Frameworks */,
+				EAB1D3E3195A3BED00F9D55A /* UIKit.framework in Frameworks */,
+				EAB1D3DF195A3BED00F9D55A /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		EAB1D3D2195A3BED00F9D55A = {
+			isa = PBXGroup;
+			children = (
+				EAB1D3E4195A3BED00F9D55A /* AirPlay-Direct-POC */,
+				EAB1D3DD195A3BED00F9D55A /* Frameworks */,
+				EAB1D3DC195A3BED00F9D55A /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		EAB1D3DC195A3BED00F9D55A /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				EAB1D3DB195A3BED00F9D55A /* AirPlay-Direct-POC.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		EAB1D3DD195A3BED00F9D55A /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				EA50652A195B762900C2A56F /* AVFoundation.framework */,
+				EA506528195B70F700C2A56F /* libicucore.dylib */,
+				EA506526195B70F300C2A56F /* libz.dylib */,
+				EAB1D415195A3C0500F9D55A /* MediaPlayer.framework */,
+				EAB1D3DE195A3BED00F9D55A /* Foundation.framework */,
+				EAB1D3E0195A3BED00F9D55A /* CoreGraphics.framework */,
+				EAB1D3E2195A3BED00F9D55A /* UIKit.framework */,
+				EAB1D3FD195A3BED00F9D55A /* XCTest.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		EAB1D3E4195A3BED00F9D55A /* AirPlay-Direct-POC */ = {
+			isa = PBXGroup;
+			children = (
+				EAB1D417195A3DED00F9D55A /* MPAudioDeviceController.h */,
+				EAB1D3ED195A3BED00F9D55A /* AppDelegate.h */,
+				EAB1D3EE195A3BED00F9D55A /* AppDelegate.m */,
+				EAB1D3F0195A3BED00F9D55A /* Main.storyboard */,
+				EAB1D3F3195A3BED00F9D55A /* ViewController.h */,
+				EAB1D3F4195A3BED00F9D55A /* ViewController.m */,
+				EAB1D3F6195A3BED00F9D55A /* Images.xcassets */,
+				EAB1D3E5195A3BED00F9D55A /* Supporting Files */,
+			);
+			path = "AirPlay-Direct-POC";
+			sourceTree = "<group>";
+		};
+		EAB1D3E5195A3BED00F9D55A /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				EAB1D3E6195A3BED00F9D55A /* AirPlay-Direct-POC-Info.plist */,
+				EAB1D3E7195A3BED00F9D55A /* InfoPlist.strings */,
+				EAB1D3EA195A3BED00F9D55A /* main.m */,
+				EAB1D3EC195A3BED00F9D55A /* AirPlay-Direct-POC-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		EAB1D3DA195A3BED00F9D55A /* AirPlay-Direct-POC */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EAB1D40D195A3BED00F9D55A /* Build configuration list for PBXNativeTarget "AirPlay-Direct-POC" */;
+			buildPhases = (
+				EAB1D3D7195A3BED00F9D55A /* Sources */,
+				EAB1D3D8195A3BED00F9D55A /* Frameworks */,
+				EAB1D3D9195A3BED00F9D55A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "AirPlay-Direct-POC";
+			productName = AirPlayHackTest;
+			productReference = EAB1D3DB195A3BED00F9D55A /* AirPlay-Direct-POC.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		EAB1D3D3195A3BED00F9D55A /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0510;
+				ORGANIZATIONNAME = "LG Electronics";
+			};
+			buildConfigurationList = EAB1D3D6195A3BED00F9D55A /* Build configuration list for PBXProject "AirPlay-Direct-POC" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = EAB1D3D2195A3BED00F9D55A;
+			productRefGroup = EAB1D3DC195A3BED00F9D55A /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				EAB1D3DA195A3BED00F9D55A /* AirPlay-Direct-POC */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		EAB1D3D9195A3BED00F9D55A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EAB1D3F7195A3BED00F9D55A /* Images.xcassets in Resources */,
+				EAB1D3E9195A3BED00F9D55A /* InfoPlist.strings in Resources */,
+				EAB1D3F2195A3BED00F9D55A /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		EAB1D3D7195A3BED00F9D55A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EAB1D3F5195A3BED00F9D55A /* ViewController.m in Sources */,
+				EAB1D3EF195A3BED00F9D55A /* AppDelegate.m in Sources */,
+				EAB1D3EB195A3BED00F9D55A /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		EAB1D3E7195A3BED00F9D55A /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				EAB1D3E8195A3BED00F9D55A /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		EAB1D3F0195A3BED00F9D55A /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				EAB1D3F1195A3BED00F9D55A /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		EAB1D40B195A3BED00F9D55A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		EAB1D40C195A3BED00F9D55A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		EAB1D40E195A3BED00F9D55A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"/Users/jwhite/Repositories/Connect-SDK-iOS/ConnectSDK/Frameworks",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "AirPlay-Direct-POC/AirPlay-Direct-POC-Prefix.pch";
+				INFOPLIST_FILE = "AirPlay-Direct-POC/AirPlay-Direct-POC-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "AirPlay-Direct-POC";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		EAB1D40F195A3BED00F9D55A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"/Users/jwhite/Repositories/Connect-SDK-iOS/ConnectSDK/Frameworks",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "AirPlay-Direct-POC/AirPlay-Direct-POC-Prefix.pch";
+				INFOPLIST_FILE = "AirPlay-Direct-POC/AirPlay-Direct-POC-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "AirPlay-Direct-POC";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		EAB1D3D6195A3BED00F9D55A /* Build configuration list for PBXProject "AirPlay-Direct-POC" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EAB1D40B195A3BED00F9D55A /* Debug */,
+				EAB1D40C195A3BED00F9D55A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EAB1D40D195A3BED00F9D55A /* Build configuration list for PBXNativeTarget "AirPlay-Direct-POC" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EAB1D40E195A3BED00F9D55A /* Debug */,
+				EAB1D40F195A3BED00F9D55A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = EAB1D3D3195A3BED00F9D55A /* Project object */;
+}

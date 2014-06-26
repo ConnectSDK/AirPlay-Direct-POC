@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6154.21" systemVersion="13D65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="vXZ-lx-hvc">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6153.13"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="ufC-wZ-h7g">
+            <objects>
+                <viewController id="vXZ-lx-hvc" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="jyV-Pf-zRb"/>
+                        <viewControllerLayoutGuide type="bottom" id="2fi-mo-0CV"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="kh9-bI-dsS">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" horizontalCompressionResistancePriority="749" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xl8-ew-BWt">
+                                <rect key="frame" x="53" y="61" width="84" height="30"/>
+                                <state key="normal" title="Beam Audio">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="beamAudio:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="X2K-1z-WKF"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="249" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hg7-gC-qlg">
+                                <rect key="frame" x="173" y="61" width="107" height="30"/>
+                                <state key="normal" title="Beam Video">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="beamVideo:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="YeY-K3-peE"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="es6-Lk-nBA">
+                                <rect key="frame" x="86" y="154" width="30" height="30"/>
+                                <state key="normal" title="Play">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="play:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="9qj-oN-DsW"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6RH-sA-kc2">
+                                <rect key="frame" x="191" y="154" width="43" height="30"/>
+                                <state key="normal" title="Pause">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="pause:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="iLR-9I-L3W"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PAe-4N-y4P">
+                                <rect key="frame" x="140" y="249" width="40" height="30"/>
+                                <state key="normal" title="Close">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="close:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="ewg-8D-FNT"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="6RH-sA-kc2" firstAttribute="leading" secondItem="es6-Lk-nBA" secondAttribute="trailing" constant="75" id="2tu-Ka-34Q"/>
+                            <constraint firstItem="xl8-ew-BWt" firstAttribute="top" secondItem="hg7-gC-qlg" secondAttribute="top" id="4QF-t3-53Y"/>
+                            <constraint firstItem="6RH-sA-kc2" firstAttribute="top" secondItem="es6-Lk-nBA" secondAttribute="top" id="6fM-k4-RCS"/>
+                            <constraint firstItem="PAe-4N-y4P" firstAttribute="top" secondItem="es6-Lk-nBA" secondAttribute="bottom" constant="65" id="6x9-S3-oBe"/>
+                            <constraint firstItem="hg7-gC-qlg" firstAttribute="leading" secondItem="xl8-ew-BWt" secondAttribute="trailing" constant="36" id="OAI-rE-KMp"/>
+                            <constraint firstAttribute="centerX" secondItem="es6-Lk-nBA" secondAttribute="centerX" constant="59" id="OEy-wD-rjD"/>
+                            <constraint firstItem="xl8-ew-BWt" firstAttribute="top" secondItem="jyV-Pf-zRb" secondAttribute="bottom" constant="41" id="UUn-KH-82R"/>
+                            <constraint firstAttribute="centerX" secondItem="hg7-gC-qlg" secondAttribute="centerX" constant="-66.5" id="XtK-pt-BTl"/>
+                            <constraint firstAttribute="centerX" secondItem="xl8-ew-BWt" secondAttribute="centerX" constant="65.5" id="a6K-8e-sy3"/>
+                            <constraint firstAttribute="centerX" secondItem="6RH-sA-kc2" secondAttribute="centerX" constant="-52.5" id="ndJ-EG-IBA"/>
+                            <constraint firstItem="es6-Lk-nBA" firstAttribute="top" secondItem="xl8-ew-BWt" secondAttribute="bottom" constant="63" id="qlk-Gz-Ght"/>
+                            <constraint firstAttribute="centerX" secondItem="PAe-4N-y4P" secondAttribute="centerX" id="uoB-ve-wyM"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="beamAudioButton" destination="xl8-ew-BWt" id="0Hh-dO-FIN"/>
+                        <outlet property="beamVideoButton" destination="hg7-gC-qlg" id="ebl-q8-SAf"/>
+                        <outlet property="closeButton" destination="PAe-4N-y4P" id="A1B-Ff-Mvn"/>
+                        <outlet property="pauseButton" destination="6RH-sA-kc2" id="a2d-zk-mIR"/>
+                        <outlet property="playButton" destination="es6-Lk-nBA" id="xsB-WB-7KE"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+    </scenes>
+    <simulatedMetricsContainer key="defaultSimulatedMetrics">
+        <simulatedStatusBarMetrics key="statusBar"/>
+        <simulatedOrientationMetrics key="orientation"/>
+        <simulatedScreenMetrics key="destination" type="retina4"/>
+    </simulatedMetricsContainer>
+</document>
